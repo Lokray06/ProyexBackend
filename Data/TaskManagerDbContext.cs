@@ -31,10 +31,6 @@ public partial class ProyexDBContext : DbContext
 
     public virtual DbSet<ProjectPermission> ProjectPermissions { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=db;Username=user;Password=password");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder
@@ -153,13 +149,13 @@ public partial class ProyexDBContext : DbContext
                 .HasDefaultValue(UserRole.Worker);
 
             entity.HasOne(d => d.User)
-                .WithMany()
+                .WithMany(p => p.ProjectPermissions) // <-- Point to the new property in User.cs
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("projectPermissions_userId_fkey");
 
             entity.HasOne(d => d.Project)
-                .WithMany()
+                .WithMany(p => p.ProjectPermissions) // <-- Point to the new property in Project.cs
                 .HasForeignKey(d => d.ProjectId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("projectPermissions_projectId_fkey");
@@ -286,25 +282,6 @@ public partial class ProyexDBContext : DbContext
                         j.IndexerProperty<int>("UserId").HasColumnName("userId");
                         j.IndexerProperty<int>("GroupId").HasColumnName("groupId");
                     });
-
-            entity.HasMany(d => d.ProjectsNavigation).WithMany(p => p.Users)
-                .UsingEntity<Dictionary<string, object>>(
-                    "ProjectPermission",
-                    r => r.HasOne<Project>().WithMany()
-                        .HasForeignKey("ProjectId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("projectPermissions_projectId_fkey"),
-                    l => l.HasOne<User>().WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("projectPermissions_userId_fkey"),
-                    j =>
-                    {
-                        j.HasKey("UserId", "ProjectId").HasName("projectPermissions_pkey");
-                        j.ToTable("projectPermissions");
-                        j.IndexerProperty<int>("UserId").HasColumnName("userId");
-                        j.IndexerProperty<int>("ProjectId").HasColumnName("projectId");
-                    });
         });
 
         modelBuilder.Entity<UserProject>(entity =>
@@ -334,7 +311,6 @@ public partial class ProyexDBContext : DbContext
         // Enum conversions
         modelBuilder.Entity<User>()
             .Property(u => u.Role)
-            .HasConversion<string>()
             .HasColumnName("role");
 
         modelBuilder.Entity<Group>()
@@ -366,11 +342,6 @@ public partial class ProyexDBContext : DbContext
             .Property(t => t.Priority)
             .HasConversion<string>()
             .HasColumnName("priority");
-
-        // ProjectPermissions join table uses userRoles enum for projectRole
-        modelBuilder.Entity<User>()
-            .Navigation(e => e.ProjectsNavigation)
-            .Metadata.SetField("projectRole");
 
         OnModelCreatingPartial(modelBuilder);
     }

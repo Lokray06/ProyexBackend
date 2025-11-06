@@ -2,7 +2,9 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using ProyexBackend.Data; // <--- Make sure this matches your project name
+using ProyexBackend.Data;
+using ProyexBackend.Models;
+using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +15,12 @@ var Configuration = builder.Configuration;
 // --- 2. Add Database Context (EF Core) ---
 var connectionString = Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ProyexDBContext>(options =>
-    options.UseNpgsql(connectionString));
+    options.UseNpgsql(connectionString,
+    npgsqlOptions =>
+    {
+        npgsqlOptions.MapEnum<UserRole>("userRoles");
+    }
+));
 
 // --- 3. Add Authentication & JWT ---
 builder.Services.AddAuthentication(options =>

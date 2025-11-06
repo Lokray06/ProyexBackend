@@ -21,10 +21,9 @@
         public virtual User Owner { get; set; } = null!;
         public virtual Group? OwningGroup { get; set; }
         public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
-        
-        // Many-to-many navigation
-        public virtual ICollection<User> Users { get; set; } = new List<User>();
-        public virtual ICollection<UserProject> UserProjects { get; set; } = new List<UserProject>();
 
+        // Many-to-many navigation
+        public virtual ICollection<ProjectPermission> ProjectPermissions { get; set; } = new List<ProjectPermission>();
+        public virtual ICollection<UserProject> UserProjects { get; set; } = new List<UserProject>();
     }
 }

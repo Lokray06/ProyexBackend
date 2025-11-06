@@ -41,5 +41,5 @@ public partial class User
 
     public virtual ICollection<Group> GroupsNavigation { get; set; } = new List<Group>();
 
-    public virtual ICollection<Project> ProjectsNavigation { get; set; } = new List<Project>();
+    public virtual ICollection<ProjectPermission> ProjectPermissions { get; set; } = new List<ProjectPermission>();
 }
