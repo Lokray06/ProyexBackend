@@ -1,0 +1,1125 @@
+--- Directory Tree for: ProyexBackend ---
+Located at: /home/juanpa/dev/csharp/ProyexBackend
+
+/home/juanpa/dev/csharp/ProyexBackend
+├── appsettings.Development.json
+├── appsettings.json
+├── bin
+│   └── Debug
+│       └── net8.0
+│           ├── appsettings.Development.json
+│           ├── appsettings.json
+│           ├── cs
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── de
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── es
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── fr
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── Humanizer.dll
+│           ├── it
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── ja
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── ko
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── Microsoft.AspNetCore.OpenApi.dll
+│           ├── Microsoft.Bcl.AsyncInterfaces.dll
+│           ├── Microsoft.Build.Locator.dll
+│           ├── Microsoft.CodeAnalysis.CSharp.dll
+│           ├── Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+│           ├── Microsoft.CodeAnalysis.dll
+│           ├── Microsoft.CodeAnalysis.Workspaces.dll
+│           ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+│           ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+│           ├── Microsoft.EntityFrameworkCore.Abstractions.dll
+│           ├── Microsoft.EntityFrameworkCore.Design.dll
+│           ├── Microsoft.EntityFrameworkCore.dll
+│           ├── Microsoft.EntityFrameworkCore.Relational.dll
+│           ├── Microsoft.Extensions.Caching.Abstractions.dll
+│           ├── Microsoft.Extensions.Caching.Memory.dll
+│           ├── Microsoft.Extensions.Configuration.Abstractions.dll
+│           ├── Microsoft.Extensions.DependencyInjection.Abstractions.dll
+│           ├── Microsoft.Extensions.DependencyInjection.dll
+│           ├── Microsoft.Extensions.DependencyModel.dll
+│           ├── Microsoft.Extensions.Logging.Abstractions.dll
+│           ├── Microsoft.Extensions.Logging.dll
+│           ├── Microsoft.Extensions.Options.dll
+│           ├── Microsoft.Extensions.Primitives.dll
+│           ├── Microsoft.OpenApi.dll
+│           ├── Mono.TextTemplating.dll
+│           ├── Npgsql.dll
+│           ├── Npgsql.EntityFrameworkCore.PostgreSQL.dll
+│           ├── pl
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── ProyexBackend
+│           ├── ProyexBackend.deps.json
+│           ├── ProyexBackend.dll
+│           ├── ProyexBackend.pdb
+│           ├── ProyexBackend.runtimeconfig.json
+│           ├── pt-BR
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── ru
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── runtimes
+│           │   └── browser
+│           │       └── lib
+│           │           └── net8.0
+│           │               └── System.Text.Encodings.Web.dll
+│           ├── Swashbuckle.AspNetCore.Swagger.dll
+│           ├── Swashbuckle.AspNetCore.SwaggerGen.dll
+│           ├── Swashbuckle.AspNetCore.SwaggerUI.dll
+│           ├── System.CodeDom.dll
+│           ├── System.Composition.AttributedModel.dll
+│           ├── System.Composition.Convention.dll
+│           ├── System.Composition.Hosting.dll
+│           ├── System.Composition.Runtime.dll
+│           ├── System.Composition.TypedParts.dll
+│           ├── System.Diagnostics.DiagnosticSource.dll
+│           ├── System.IO.Pipelines.dll
+│           ├── System.Text.Encodings.Web.dll
+│           ├── System.Text.Json.dll
+│           ├── tr
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           ├── zh-Hans
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           └── zh-Hant
+│               ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│               ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│               ├── Microsoft.CodeAnalysis.resources.dll
+│               ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│               └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+├── Controllers
+│   ├── AuthController.cs
+│   └── ProjectsController.cs
+├── Data
+│   └── TaskManagerDbContext.cs
+├── docker-compose.yml
+├── Dockerfile
+├── init.sql
+├── Models
+│   ├── Comment.cs
+│   ├── Enums
+│   │   └── Enums.cs
+│   ├── Group.cs
+│   ├── Project.cs
+│   ├── Tag.cs
+│   ├── Task.cs
+│   ├── User.cs
+│   └── UserProject.cs
+├── obj
+│   ├── Debug
+│   │   └── net8.0
+│   │       ├── apphost
+│   │       ├── ProyexBackend.AssemblyInfo.cs
+│   │       ├── ProyexBackend.AssemblyInfoInputs.cache
+│   │       ├── ProyexBackend.assets.cache
+│   │       ├── ProyexBackend.csproj.AssemblyReference.cache
+│   │       ├── ProyexBackend.csproj.CopyComplete
+│   │       ├── ProyexBackend.csproj.CoreCompileInputs.cache
+│   │       ├── ProyexBackend.csproj.FileListAbsolute.txt
+│   │       ├── ProyexBackend.dll
+│   │       ├── ProyexBackend.GeneratedMSBuildEditorConfig.editorconfig
+│   │       ├── ProyexBackend.genruntimeconfig.cache
+│   │       ├── ProyexBackend.GlobalUsings.g.cs
+│   │       ├── ProyexBackend.MvcApplicationPartsAssemblyInfo.cache
+│   │       ├── ProyexBackend.MvcApplicationPartsAssemblyInfo.cs
+│   │       ├── ProyexBackend.pdb
+│   │       ├── ref
+│   │       │   └── ProyexBackend.dll
+│   │       ├── refint
+│   │       │   └── ProyexBackend.dll
+│   │       ├── staticwebassets
+│   │       │   ├── msbuild.buildMultiTargeting.ProyexBackend.props
+│   │       │   ├── msbuild.build.ProyexBackend.props
+│   │       │   └── msbuild.buildTransitive.ProyexBackend.props
+│   │       └── staticwebassets.build.json
+│   ├── project.assets.json
+│   ├── project.nuget.cache
+│   ├── ProyexBackend.csproj.EntityFrameworkCore.targets
+│   ├── ProyexBackend.csproj.nuget.dgspec.json
+│   ├── ProyexBackend.csproj.nuget.g.props
+│   └── ProyexBackend.csproj.nuget.g.targets
+├── Program.cs
+├── Properties
+│   └── launchSettings.json
+├── ProyexBackend.csproj
+├── ProyexBackend.http
+├── ProyexBackend.sln
+└── wholeAPISource.txt
+
+32 directories, 163 files
+
+--- File Contents (Recursive) ---
+Data/TaskManagerDbContext.cs:
+[AND the contents]
+﻿using Microsoft.EntityFrameworkCore;
+using ProyexBackend.Models;
+
+
+namespace ProyexBackend.Data;
+
+public partial class ProyexDBContext : DbContext
+{
+    public ProyexDBContext()
+    {
+    }
+
+    public ProyexDBContext(DbContextOptions<ProyexDBContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<Comment> Comments { get; set; }
+
+    public virtual DbSet<Group> Groups { get; set; }
+
+    public virtual DbSet<Project> Projects { get; set; }
+
+    public virtual DbSet<Tag> Tags { get; set; }
+
+    public virtual DbSet<Models.Task> Tasks { get; set; }
+
+    public virtual DbSet<User> Users { get; set; }
+
+    public virtual DbSet<UserProject> UserProjects { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=db;Username=user;Password=password");
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder
+            .HasPostgresEnum("groupType", new[] { "team", "organization", "committee", "personalGroup" })
+            .HasPostgresEnum("priority", new[] { "low", "medium", "high", "critical" })
+            .HasPostgresEnum("projectStatus", new[] { "active", "archived", "onHold" })
+            .HasPostgresEnum("taskStatus", new[] { "pendingAssignment", "inProgress", "blocked", "completed" })
+            .HasPostgresEnum("userRoles", new[] { "administrator", "projectManager", "worker", "collaborator", "contributor" })
+            .HasPostgresEnum("visibility", new[] { "public", "private" });
+
+        modelBuilder.Entity<Comment>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("comments_pkey");
+
+            entity.ToTable("comments");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content).HasColumnName("content");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("now()")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("createdAt");
+            entity.Property(e => e.ParentCommentId)
+                .HasComment("Self-reference for thread replies. NULL for top-level comments.")
+                .HasColumnName("parentCommentId");
+            entity.Property(e => e.TaskId)
+                .HasComment("Comment belongs to a task")
+                .HasColumnName("taskId");
+            entity.Property(e => e.UserId)
+                .HasComment("User who made the comment")
+                .HasColumnName("userId");
+
+            entity.HasOne(d => d.ParentComment).WithMany(p => p.InverseParentComment)
+                .HasForeignKey(d => d.ParentCommentId)
+                .HasConstraintName("comments_parentCommentId_fkey");
+
+            entity.HasOne(d => d.Task).WithMany(p => p.Comments)
+                .HasForeignKey(d => d.TaskId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("comments_taskId_fkey");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Comments)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("comments_userId_fkey");
+        });
+
+        modelBuilder.Entity<Group>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("groups_pkey");
+
+            entity.ToTable("groups");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("now()")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("createdAt");
+            entity.Property(e => e.Name)
+                .HasColumnType("character varying")
+                .HasColumnName("name");
+            entity.Property(e => e.OwnerId)
+                .HasComment("User who created/manages the group")
+                .HasColumnName("ownerId");
+
+            entity.HasOne(d => d.Owner).WithMany(p => p.Groups)
+                .HasForeignKey(d => d.OwnerId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("groups_ownerId_fkey");
+        });
+
+        modelBuilder.Entity<Project>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("projects_pkey");
+
+            entity.ToTable("projects");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("now()")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("createdAt");
+            entity.Property(e => e.Description).HasColumnName("description");
+            entity.Property(e => e.DueDate).HasColumnName("dueDate");
+            entity.Property(e => e.Name)
+                .HasColumnType("character varying")
+                .HasColumnName("name");
+            entity.Property(e => e.OwnerId)
+                .HasComment("Individual user who created the project")
+                .HasColumnName("ownerId");
+            entity.Property(e => e.OwningGroupId)
+                .HasComment("The organization or team officially sponsoring/owning the project")
+                .HasColumnName("owningGroupId");
+            entity.Property(e => e.StartDate).HasColumnName("startDate");
+
+            entity.HasOne(d => d.Owner).WithMany(p => p.Projects)
+                .HasForeignKey(d => d.OwnerId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("projects_ownerId_fkey");
+
+            entity.HasOne(d => d.OwningGroup).WithMany(p => p.Projects)
+                .HasForeignKey(d => d.OwningGroupId)
+                .HasConstraintName("projects_owningGroupId_fkey");
+        });
+
+        modelBuilder.Entity<Tag>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("tags_pkey");
+
+            entity.ToTable("tags");
+
+            entity.HasIndex(e => e.Name, "tags_name_key").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Name)
+                .HasColumnType("character varying")
+                .HasColumnName("name");
+        });
+
+        modelBuilder.Entity<ProyexBackend.Models.Task>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("tasks_pkey");
+
+            entity.ToTable("tasks");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AssignedToUserId)
+                .HasComment("Can be NULL if status is pendingAssignment")
+                .HasColumnName("assignedToUserId");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("now()")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("createdAt");
+            entity.Property(e => e.Description).HasColumnName("description");
+            entity.Property(e => e.DueDate).HasColumnName("dueDate");
+            entity.Property(e => e.ProjectId).HasColumnName("projectId");
+            entity.Property(e => e.Title)
+                .HasColumnType("character varying")
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("updatedAt");
+
+            entity.HasOne(d => d.AssignedToUser).WithMany(p => p.Tasks)
+                .HasForeignKey(d => d.AssignedToUserId)
+                .HasConstraintName("tasks_assignedToUserId_fkey");
+
+            entity.HasOne(d => d.Project).WithMany(p => p.Tasks)
+                .HasForeignKey(d => d.ProjectId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("tasks_projectId_fkey");
+
+            entity.HasMany(d => d.Tags).WithMany(p => p.Tasks)
+                .UsingEntity<Dictionary<string, object>>(
+                    "TaskTag",
+                    r => r.HasOne<Tag>().WithMany()
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("taskTags_tagId_fkey"),
+                    l => l.HasOne<ProyexBackend.Models.Task>().WithMany()
+                        .HasForeignKey("TaskId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("taskTags_taskId_fkey"),
+                    j =>
+                    {
+                        j.HasKey("TaskId", "TagId").HasName("taskTags_pkey");
+                        j.ToTable("taskTags");
+                        j.IndexerProperty<int>("TaskId").HasColumnName("taskId");
+                        j.IndexerProperty<int>("TagId").HasColumnName("tagId");
+                    });
+        });
+
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("users_pkey");
+
+            entity.ToTable("users");
+
+            entity.HasIndex(e => e.Email, "users_email_key").IsUnique();
+
+            entity.HasIndex(e => e.Username, "users_username_key").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Avatar).HasColumnName("avatar");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("now()")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("createdAt");
+            entity.Property(e => e.Email)
+                .HasColumnType("character varying")
+                .HasColumnName("email");
+            entity.Property(e => e.FirstName)
+                .HasColumnType("character varying")
+                .HasColumnName("firstName");
+            entity.Property(e => e.LastLogin)
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("lastLogin");
+            entity.Property(e => e.LastName)
+                .HasColumnType("character varying")
+                .HasColumnName("lastName");
+            entity.Property(e => e.PasswordHash)
+                .HasComment("Store securely")
+                .HasColumnType("character varying")
+                .HasColumnName("passwordHash");
+            entity.Property(e => e.Username)
+                .HasColumnType("character varying")
+                .HasColumnName("username");
+
+            entity.HasMany(d => d.GroupsNavigation).WithMany(p => p.Users)
+                .UsingEntity<Dictionary<string, object>>(
+                    "UserGroup",
+                    r => r.HasOne<Group>().WithMany()
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("userGroups_groupId_fkey"),
+                    l => l.HasOne<User>().WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("userGroups_userId_fkey"),
+                    j =>
+                    {
+                        j.HasKey("UserId", "GroupId").HasName("userGroups_pkey");
+                        j.ToTable("userGroups");
+                        j.IndexerProperty<int>("UserId").HasColumnName("userId");
+                        j.IndexerProperty<int>("GroupId").HasColumnName("groupId");
+                    });
+
+            entity.HasMany(d => d.ProjectsNavigation).WithMany(p => p.Users)
+                .UsingEntity<Dictionary<string, object>>(
+                    "ProjectPermission",
+                    r => r.HasOne<Project>().WithMany()
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("projectPermissions_projectId_fkey"),
+                    l => l.HasOne<User>().WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("projectPermissions_userId_fkey"),
+                    j =>
+                    {
+                        j.HasKey("UserId", "ProjectId").HasName("projectPermissions_pkey");
+                        j.ToTable("projectPermissions");
+                        j.IndexerProperty<int>("UserId").HasColumnName("userId");
+                        j.IndexerProperty<int>("ProjectId").HasColumnName("projectId");
+                    });
+        });
+
+        modelBuilder.Entity<UserProject>(entity =>
+        {
+            entity.HasKey(e => new { e.UserId, e.ProjectId }).HasName("userProjects_pkey");
+
+            entity.ToTable("userProjects");
+
+            entity.Property(e => e.UserId).HasColumnName("userId");
+            entity.Property(e => e.ProjectId).HasColumnName("projectId");
+            entity.Property(e => e.JoinDate)
+                .HasDefaultValueSql("now()")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("joinDate");
+
+            entity.HasOne(d => d.Project).WithMany(p => p.UserProjects)
+                .HasForeignKey(d => d.ProjectId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("userProjects_projectId_fkey");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserProjects)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("userProjects_userId_fkey");
+        });
+
+        // Enum conversions
+        modelBuilder.Entity<User>()
+            .Property(u => u.Role)
+            .HasConversion<string>()
+            .HasColumnName("role");
+
+        modelBuilder.Entity<Group>()
+            .Property(g => g.Type)
+            .HasConversion<string>()
+            .HasColumnName("type");
+
+        modelBuilder.Entity<Project>()
+            .Property(p => p.Status)
+            .HasConversion<string>()
+            .HasColumnName("status");
+
+        modelBuilder.Entity<Project>()
+            .Property(p => p.Priority)
+            .HasConversion<string>()
+            .HasColumnName("priority");
+
+        modelBuilder.Entity<Project>()
+            .Property(p => p.Visibility)
+            .HasConversion<string>()
+            .HasColumnName("visibility");
+
+        modelBuilder.Entity<ProyexBackend.Models.Task>()
+            .Property(t => t.Status)
+            .HasConversion<string>()
+            .HasColumnName("status");
+
+        modelBuilder.Entity<ProyexBackend.Models.Task>()
+            .Property(t => t.Priority)
+            .HasConversion<string>()
+            .HasColumnName("priority");
+
+        // ProjectPermissions join table uses userRoles enum for projectRole
+        modelBuilder.Entity<User>()
+            .Navigation(e => e.ProjectsNavigation)
+            .Metadata.SetField("projectRole");
+
+        OnModelCreatingPartial(modelBuilder);
+    }
+
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+}
+
+Models/Task.cs:
+[AND the contents]
+﻿namespace ProyexBackend.Models
+{
+    public partial class Task
+    {
+        public int Id { get; set; }
+        public string Title { get; set; } = null!;
+        public string? Description { get; set; }
+        public int ProjectId { get; set; }
+        public int? AssignedToUserId { get; set; }
+
+        // Enum properties
+        public TaskStatus Status { get; set; } = TaskStatus.PendingAssignment;
+        public Priority Priority { get; set; } = Priority.Medium;
+
+        public DateTime? DueDate { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+
+        // Navigation
+        public virtual Project Project { get; set; } = null!;
+        public virtual User? AssignedToUser { get; set; }
+    }
+}
+Models/Tag.cs:
+[AND the contents]
+﻿using System;
+using System.Collections.Generic;
+
+namespace ProyexBackend.Models;
+
+public partial class Tag
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; } = null!;
+
+    public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
+}
+
+Models/Group.cs:
+[AND the contents]
+﻿namespace ProyexBackend.Models;
+
+public partial class Group
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; } = null!;
+
+    /// <summary>
+    /// User who created/manages the group
+    /// </summary>
+    public int OwnerId { get; set; }
+
+    public DateTime? CreatedAt
+    { get; set; }
+
+    public virtual User Owner { get; set; } = null!;
+
+    public virtual ICollection<Project> Projects { get; set; } = new List<Project>();
+
+    public virtual ICollection<User> Users { get; set; } = new List<User>();
+}
+
+Models/User.cs:
+[AND the contents]
+﻿using System;
+using System.Collections.Generic;
+
+namespace ProyexBackend.Models;
+
+public partial class User
+{
+    public int Id { get; set; }
+
+    public string Username { get; set; } = null!;
+
+    public string Email { get; set; } = null!;
+
+    /// <summary>
+    /// Store securely
+    /// </summary>
+    public string PasswordHash { get; set; } = null!;
+
+    public string? FirstName { get; set; }
+
+    public string? LastName { get; set; }
+    
+    // Missing enum
+    public UserRole Role { get; set; } = UserRole.Worker; // ← Add this line
+
+    public DateTime? CreatedAt { get; set; }
+
+    public byte[]? Avatar { get; set; }
+
+    public DateTime? LastLogin { get; set; }
+
+    public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
+    public virtual ICollection<Group> Groups { get; set; } = new List<Group>();
+
+    public virtual ICollection<Project> Projects { get; set; } = new List<Project>();
+
+    public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
+
+    public virtual ICollection<UserProject> UserProjects { get; set; } = new List<UserProject>();
+
+    public virtual ICollection<Group> GroupsNavigation { get; set; } = new List<Group>();
+
+    public virtual ICollection<Project> ProjectsNavigation { get; set; } = new List<Project>();
+}
+
+Models/Project.cs:
+[AND the contents]
+﻿namespace ProyexBackend.Models
+{
+    public partial class Project
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
+        public string? Description { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? DueDate { get; set; }
+
+        // Enum properties
+        public ProjectStatus Status { get; set; } = ProjectStatus.Active;
+        public Priority Priority { get; set; } = Priority.Medium;
+        public Visibility Visibility { get; set; } = Visibility.Public;
+
+        public int OwnerId { get; set; }
+        public int? OwningGroupId { get; set; }
+        public DateTime? CreatedAt { get; set; }
+
+        // Navigation
+        public virtual User Owner { get; set; } = null!;
+        public virtual Group? OwningGroup { get; set; }
+        public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
+    }
+}
+Models/Comment.cs:
+[AND the contents]
+﻿using System;
+using System.Collections.Generic;
+
+namespace ProyexBackend.Models;
+
+public partial class Comment
+{
+    public int Id { get; set; }
+
+    public string Content { get; set; } = null!;
+
+    /// <summary>
+    /// Comment belongs to a task
+    /// </summary>
+    public int TaskId { get; set; }
+
+    /// <summary>
+    /// User who made the comment
+    /// </summary>
+    public int UserId { get; set; }
+
+    /// <summary>
+    /// Self-reference for thread replies. NULL for top-level comments.
+    /// </summary>
+    public int? ParentCommentId { get; set; }
+
+    public DateTime? CreatedAt { get; set; }
+
+    public virtual ICollection<Comment> InverseParentComment { get; set; } = new List<Comment>();
+
+    public virtual Comment? ParentComment { get; set; }
+
+    public virtual Task Task { get; set; } = null!;
+
+    public virtual User User { get; set; } = null!;
+}
+
+Models/UserProject.cs:
+[AND the contents]
+﻿using System;
+using System.Collections.Generic;
+
+namespace ProyexBackend.Models;
+
+public partial class UserProject
+{
+    public int UserId { get; set; }
+
+    public int ProjectId { get; set; }
+
+    public DateTime? JoinDate { get; set; }
+
+    public virtual Project Project { get; set; } = null!;
+
+    public virtual User User { get; set; } = null!;
+}
+
+Models/Enums/Enums.cs:
+[AND the contents]
+namespace ProyexBackend.Models
+{
+    public enum UserRole
+    {
+        Administrator,
+        ProjectManager,
+        Worker,
+        Collaborator,
+        Contributor
+    }
+
+    public enum GroupType
+    {
+        Team,
+        Organization,
+        Committee,
+        PersonalGroup
+    }
+
+    public enum TaskStatus
+    {
+        PendingAssignment,
+        InProgress,
+        Blocked,
+        Completed
+    }
+
+    public enum ProjectStatus
+    {
+        Active,
+        Archived,
+        OnHold
+    }
+
+    public enum Priority
+    {
+        Low,
+        Medium,
+        High,
+        Critical
+    }
+
+    public enum Visibility
+    {
+        Public,
+        Private
+    }
+}
+
+Program.cs:
+[AND the contents]
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using ProyexBackend.Data; // <--- Make sure this matches your project name
+
+var builder = WebApplication.CreateBuilder(args);
+
+// --- 1. Add Configuration ---
+// Reads from appsettings.json and Environment Variables (from docker-compose)
+var Configuration = builder.Configuration;
+
+// --- 2. Add Database Context (EF Core) ---
+var connectionString = Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ProyexDBContext>(options =>
+    options.UseNpgsql(connectionString));
+
+// --- 3. Add Authentication & JWT ---
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = Configuration["Jwt:Issuer"],
+        ValidAudience = Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"] ?? throw new InvalidOperationException("JWT Key is not configured")))
+    };
+});
+
+builder.Services.AddAuthorization(); // Adds authorization services
+
+// --- 4. Add Other Services ---
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(); // Adds Swagger for API testing
+
+// --- 5. Build the App ---
+var app = builder.Build();
+
+// --- 6. Configure HTTP Pipeline ---
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+// app.UseHttpsRedirection(); // We're not using HTTPS inside Docker for this demo
+
+app.UseAuthentication(); // <-- IMPORTANT: Must be before UseAuthorization
+app.UseAuthorization();
+
+app.MapControllers(); // Maps your [ApiController] classes
+
+app.Run();
+obj/Debug/net8.0/ProyexBackend.GlobalUsings.g.cs:
+[AND the contents]
+// <auto-generated/>
+global using global::Microsoft.AspNetCore.Builder;
+global using global::Microsoft.AspNetCore.Hosting;
+global using global::Microsoft.AspNetCore.Http;
+global using global::Microsoft.AspNetCore.Routing;
+global using global::Microsoft.Extensions.Configuration;
+global using global::Microsoft.Extensions.DependencyInjection;
+global using global::Microsoft.Extensions.Hosting;
+global using global::Microsoft.Extensions.Logging;
+global using global::System;
+global using global::System.Collections.Generic;
+global using global::System.IO;
+global using global::System.Linq;
+global using global::System.Net.Http;
+global using global::System.Net.Http.Json;
+global using global::System.Threading;
+global using global::System.Threading.Tasks;
+
+obj/Debug/net8.0/ProyexBackend.AssemblyInfo.cs:
+[AND the contents]
+//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+using System;
+using System.Reflection;
+
+[assembly: System.Reflection.AssemblyCompanyAttribute("ProyexBackend")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyProductAttribute("ProyexBackend")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ProyexBackend")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+
+// Generated by the MSBuild WriteCodeFragment class.
+
+
+obj/Debug/net8.0/ProyexBackend.MvcApplicationPartsAssemblyInfo.cs:
+[AND the contents]
+//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+using System;
+using System.Reflection;
+
+[assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("Microsoft.AspNetCore.OpenApi")]
+[assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("Swashbuckle.AspNetCore.SwaggerGen")]
+
+// Generated by the MSBuild WriteCodeFragment class.
+
+
+obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs:
+[AND the contents]
+// <autogenerated />
+using System;
+using System.Reflection;
+[assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute(".NETCoreApp,Version=v8.0", FrameworkDisplayName = ".NET 8.0")]
+
+Controllers/AuthController.cs:
+[AND the contents]
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using ProyexBackend.Data;
+using ProyexBackend.Models;
+
+// Simple DTOs (Data Transfer Objects) for login/register
+public record RegisterDto(string Username, string Email, string Password);
+public record LoginDto(string Email, string Password);
+public record AuthResponse(string Token, string Username, string Email);
+
+[ApiController]
+[Route("api/[controller]")]
+public class AuthController : ControllerBase
+{
+    private readonly ProyexDBContext _context;
+    private readonly IConfiguration _config;
+
+    public AuthController(ProyexDBContext context, IConfiguration config)
+    {
+        _context = context;
+        _config = config;
+    }
+
+    [HttpPost("register")]
+    public async Task<IActionResult> Register([FromBody] RegisterDto request)
+    {
+        // Check if user already exists
+        if (await _context.Users.AnyAsync(u => u.Email == request.Email || u.Username == request.Username))
+        {
+            return BadRequest("Username or email already taken.");
+        }
+
+        // Hash the password
+        var passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
+
+        var user = new User
+        {
+            Username = request.Username,
+            Email = request.Email,
+            PasswordHash = passwordHash,
+            Role = UserRole.Worker // Default role from your enum
+        };
+
+        _context.Users.Add(user);
+        await _context.SaveChangesAsync();
+
+        return Ok(new { message = "User registered successfully" });
+    }
+
+    [HttpPost("login")]
+    public async Task<IActionResult> Login([FromBody] LoginDto request)
+    {
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
+
+        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+        {
+            return Unauthorized("Invalid credentials.");
+        }
+
+        // Generate JWT Token
+        var token = GenerateJwtToken(user);
+
+        return Ok(new AuthResponse(token, user.Username, user.Email));
+    }
+
+    private string GenerateJwtToken(User user)
+    {
+        var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+        // Add claims (user information)
+        var claims = new[]
+        {
+            new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+            new Claim(JwtRegisteredClaimNames.Email, user.Email),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.Role, user.Role.ToString()) // Add the user's role
+        };
+
+        var token = new JwtSecurityToken(
+            issuer: _config["Jwt:Issuer"],
+            audience: _config["Jwt:Audience"],
+            claims: claims,
+            expires: DateTime.Now.AddHours(24), // Token expires in 24 hours
+            signingCredentials: credentials);
+
+        return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+}
+Controllers/ProjectsController.cs:
+[AND the contents]
+using Microsoft.AspNetCore.Authorization; // <-- Import authorization
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using ProyexBackend.Data;
+using ProyexBackend.Models;
+
+[ApiController]
+[Route("api/[controller]")]
+[Authorize] // <-- 🔒 ALL endpoints in this controller require a valid JWT
+public class ProjectsController : ControllerBase
+{
+    private readonly ProyexDBContext _context;
+
+    public ProjectsController(ProyexDBContext context)
+    {
+        _context = context;
+    }
+
+    // GET: api/projects
+    [HttpGet]
+    public async Task<IActionResult> GetProjects()
+    {
+        // Example: Get only projects owned by the currently logged-in user
+        var userId = GetCurrentUserId();
+        var projects = await _context.Projects
+            .Where(p => p.OwnerId == userId)
+            .ToListAsync();
+
+        return Ok(projects);
+    }
+
+    // GET: api/projects/5
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetProject(int id)
+    {
+        var project = await _context.Projects.FindAsync(id);
+
+        if (project == null)
+        {
+            return NotFound();
+        }
+
+        // Security check: Is this user allowed to see this project?
+        var userId = GetCurrentUserId();
+        if (project.OwnerId != userId)
+        {
+            // You'd add more complex logic here (check userProjects, group permissions, etc.)
+            return Forbid("You do not have permission to view this project.");
+        }
+
+        return Ok(project);
+    }
+
+    // POST: api/projects
+    [HttpPost]
+    public async Task<IActionResult> CreateProject([FromBody] Project project)
+    {
+        // Set the owner to the logged-in user
+        project.OwnerId = GetCurrentUserId();
+        project.CreatedAt = DateTime.UtcNow; // Ensure dates are set
+
+        _context.Projects.Add(project);
+        await _context.SaveChangesAsync();
+
+        // Return a 201 Created response with the new project
+        return CreatedAtAction(nameof(GetProject), new { id = project.Id }, project);
+    }
+
+    // A helper method to get the ID of the user from their token
+    private int GetCurrentUserId()
+    {
+        var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)
+                          ?? User.Claims.FirstOrDefault(c => c.Type == "sub"); // "sub" is standard for user ID
+
+        if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId))
+        {
+            return userId;
+        }
+
+        // This should not happen if [Authorize] is working
+        throw new Exception("User ID not found in token.");
+    }
+}
+--- End of Listing ---
