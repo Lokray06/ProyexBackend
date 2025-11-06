@@ -10,8 +10,7 @@ public partial class ProyexDBContext : DbContext
     {
     }
 
-    public ProyexDBContext(DbContextOptions<ProyexDBContext> options)
-        : base(options)
+    public ProyexDBContext(DbContextOptions<ProyexDBContext> options) : base(options)
     {
     }
 
