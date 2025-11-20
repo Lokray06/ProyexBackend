@@ -1,69 +1,49 @@
-using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using ProyexBackend.Data;
-using ProyexBackend.Models;
-using Npgsql;
+using ProyexBackend.Models; // <--- Add this namespace
+using Npgsql;                // <--- Add this namespace
 
 var builder = WebApplication.CreateBuilder(args);
 
-// --- 1. Add Configuration ---
-// Reads from appsettings.json and Environment Variables (from docker-compose)
+// Read config
 var Configuration = builder.Configuration;
 
-// --- 2. Add Database Context (EF Core) ---
+// --- REPLACE THE OLD DB CONTEXT SETUP WITH THIS BLOCK ---
+
+// 1. Create the data source builder
 var connectionString = Configuration.GetConnectionString("DefaultConnection");
+var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
+
+// 2. Map your C# Enums to the Postgres Enum names (case-sensitive from init.sql)
+dataSourceBuilder.MapEnum<UserRole>("userRoles");
+dataSourceBuilder.MapEnum<GroupType>("groupType");
+dataSourceBuilder.MapEnum<ProyexBackend.Models.TaskStatus>("taskStatus"); // Full name to avoid conflict
+dataSourceBuilder.MapEnum<ProjectStatus>("projectStatus");
+dataSourceBuilder.MapEnum<Priority>("priority");
+dataSourceBuilder.MapEnum<Visibility>("visibility");
+
+// 3. Build the data source
+var dataSource = dataSourceBuilder.Build();
+
+// 4. Add DbContext using the data source
 builder.Services.AddDbContext<ProyexDBContext>(options =>
-    options.UseNpgsql(connectionString,
-    npgsqlOptions =>
-    {
-        npgsqlOptions.MapEnum<UserRole>("userRoles");
-    }
-));
+    options.UseNpgsql(dataSource)
+);
 
-// --- 3. Add Authentication & JWT ---
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = Configuration["Jwt:Issuer"],
-        ValidAudience = Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"] ?? throw new InvalidOperationException("JWT Key is not configured")))
-    };
-});
+// --------------------------------------------------------
 
-builder.Services.AddAuthorization(); // Adds authorization services
-
-// --- 4. Add Other Services ---
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(); // Adds Swagger for API testing
+builder.Services.AddSwaggerGen();
 
-// --- 5. Build the App ---
 var app = builder.Build();
 
-// --- 6. Configure HTTP Pipeline ---
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// app.UseHttpsRedirection(); // We're not using HTTPS inside Docker for this demo
-
-app.UseAuthentication(); // <-- IMPORTANT: Must be before UseAuthorization
-app.UseAuthorization();
-
-app.MapControllers(); // Maps your [ApiController] classes
+app.MapControllers();
 
 app.Run();

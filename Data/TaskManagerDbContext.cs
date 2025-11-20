@@ -30,6 +30,11 @@ public partial class ProyexDBContext : DbContext
 
     public virtual DbSet<ProjectPermission> ProjectPermissions { get; set; }
 
+    public virtual DbSet<TaskTag> TaskTags { get; set; }
+
+    public virtual DbSet<UserGroup> UserGroups { get; set; }
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder
@@ -75,30 +80,6 @@ public partial class ProyexDBContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("comments_userId_fkey");
-        });
-
-        modelBuilder.Entity<Group>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("groups_pkey");
-
-            entity.ToTable("groups");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.CreatedAt)
-                .HasDefaultValueSql("now()")
-                .HasColumnType("timestamp without time zone")
-                .HasColumnName("createdAt");
-            entity.Property(e => e.Name)
-                .HasColumnType("character varying")
-                .HasColumnName("name");
-            entity.Property(e => e.OwnerId)
-                .HasComment("User who created/manages the group")
-                .HasColumnName("ownerId");
-
-            entity.HasOne(d => d.Owner).WithMany(p => p.Groups)
-                .HasForeignKey(d => d.OwnerId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("groups_ownerId_fkey");
         });
 
         modelBuilder.Entity<Project>(entity =>
@@ -206,25 +187,6 @@ public partial class ProyexDBContext : DbContext
                 .HasForeignKey(d => d.ProjectId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("tasks_projectId_fkey");
-
-            entity.HasMany(d => d.Tags).WithMany(p => p.Tasks)
-                .UsingEntity<Dictionary<string, object>>(
-                    "TaskTag",
-                    r => r.HasOne<Tag>().WithMany()
-                        .HasForeignKey("TagId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("taskTags_tagId_fkey"),
-                    l => l.HasOne<ProyexBackend.Models.Task>().WithMany()
-                        .HasForeignKey("TaskId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("taskTags_taskId_fkey"),
-                    j =>
-                    {
-                        j.HasKey("TaskId", "TagId").HasName("taskTags_pkey");
-                        j.ToTable("taskTags");
-                        j.IndexerProperty<int>("TaskId").HasColumnName("taskId");
-                        j.IndexerProperty<int>("TagId").HasColumnName("tagId");
-                    });
         });
 
         modelBuilder.Entity<User>(entity =>
@@ -262,25 +224,6 @@ public partial class ProyexDBContext : DbContext
             entity.Property(e => e.Username)
                 .HasColumnType("character varying")
                 .HasColumnName("username");
-
-            entity.HasMany(d => d.GroupsNavigation).WithMany(p => p.Users)
-                .UsingEntity<Dictionary<string, object>>(
-                    "UserGroup",
-                    r => r.HasOne<Group>().WithMany()
-                        .HasForeignKey("GroupId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("userGroups_groupId_fkey"),
-                    l => l.HasOne<User>().WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("userGroups_userId_fkey"),
-                    j =>
-                    {
-                        j.HasKey("UserId", "GroupId").HasName("userGroups_pkey");
-                        j.ToTable("userGroups");
-                        j.IndexerProperty<int>("UserId").HasColumnName("userId");
-                        j.IndexerProperty<int>("GroupId").HasColumnName("groupId");
-                    });
         });
 
         modelBuilder.Entity<UserProject>(entity =>
@@ -341,6 +284,47 @@ public partial class ProyexDBContext : DbContext
             .Property(t => t.Priority)
             .HasConversion<string>()
             .HasColumnName("priority");
+
+        modelBuilder.Entity<TaskTag>(entity =>
+{
+    entity.ToTable("taskTags");
+
+    entity.HasKey(e => new { e.TaskId, e.TagId }).HasName("taskTags_pkey");
+
+    entity.Property(e => e.TaskId).HasColumnName("taskId");
+    entity.Property(e => e.TagId).HasColumnName("tagId");
+
+    entity.HasOne(e => e.Task)
+        .WithMany(t => t.TaskTags)
+        .HasForeignKey(e => e.TaskId)
+        .HasConstraintName("taskTags_taskId_fkey");
+
+    entity.HasOne(e => e.Tag)
+        .WithMany(t => t.TaskTags)
+        .HasForeignKey(e => e.TagId)
+        .HasConstraintName("taskTags_tagId_fkey");
+});
+
+modelBuilder.Entity<UserGroup>(entity =>
+{
+    entity.ToTable("userGroups");
+
+    entity.HasKey(e => new { e.UserId, e.GroupId }).HasName("userGroups_pkey");
+
+    entity.Property(e => e.UserId).HasColumnName("userId");
+    entity.Property(e => e.GroupId).HasColumnName("groupId");
+
+    entity.HasOne(e => e.User)
+        .WithMany(u => u.UserGroups)
+        .HasForeignKey(e => e.UserId)
+        .HasConstraintName("userGroups_userId_fkey");
+
+    entity.HasOne(e => e.Group)
+        .WithMany(g => g.UserGroups)
+        .HasForeignKey(e => e.GroupId)
+        .HasConstraintName("userGroups_groupId_fkey");
+});
+
 
         OnModelCreatingPartial(modelBuilder);
     }

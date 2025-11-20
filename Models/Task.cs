@@ -12,7 +12,7 @@
         public TaskStatus Status { get; set; } = TaskStatus.PendingAssignment;
         public Priority Priority { get; set; } = Priority.Medium;
         public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
-        public virtual ICollection<Tag> Tags { get; set; } = new List<Tag>();
+        public virtual ICollection<TaskTag> TaskTags { get; set; } = new List<TaskTag>();
 
 
         public DateTime? DueDate { get; set; }
